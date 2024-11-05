@@ -4,7 +4,7 @@
       <AppSidebar />
       <div class="main">
         <AppHeader />
-        <router-view /> <!-- Render the current route content here -->
+        <div class="body-content"><router-view /> </div><!-- Render the current route content here -->
         <AppFooter />
       </div>
     </template>
@@ -47,6 +47,12 @@ html, body, #app {
   margin: 0;
   padding: 0;
   overflow: hidden; /* Prevent scrolling on the main body */
+}
+
+.body-content {
+  flex: 1; /* Makes this div take up the available space */
+  overflow-y: auto; /* Adds scrolling if the content overflows */
+  padding: 20px; /* Optional padding for better spacing */
 }
 
 /* Main container with flexbox for the sidebar and main content */

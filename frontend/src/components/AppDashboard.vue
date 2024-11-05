@@ -1,20 +1,6 @@
 <template>
     <div class="content">
-      <h3>Overview</h3>
-      <div class="cards">
-        <div class="card">
-          <h4>Total Sales</h4>
-          <p>$10,000</p>
-        </div>
-        <div class="card">
-          <h4>Products in Stock</h4>
-          <p>150</p>
-        </div>
-        <div class="card">
-          <h4>Orders Today</h4>
-          <p>23</p>
-        </div>
-      </div>
+      <h3>Dashboard</h3> 
     </div>
   </template>
   
