@@ -28,7 +28,7 @@ app.config.globalProperties.headerjson = {headers: {
                     }};
 
 if((location.host == 'localhost:8080') || (location.host == '127.0.0.1:8080')){  
-  let baseUrl =  "http://127.0.0.1:8001"; 
+  let baseUrl =  "http://127.0.0.1:8000"; 
 	app.config.globalProperties.apiUrl = baseUrl+"/api";
 	app.config.globalProperties.baseUrl = baseUrl; 
 }

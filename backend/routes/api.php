@@ -19,10 +19,11 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('products', App\Http\Controllers\API\ProductController::class);
     Route::apiResource('sales', App\Http\Controllers\API\SalesController::class);
     Route::apiResource('inventory', App\Http\Controllers\API\InventoryController::class);
+    Route::get('product-wise-sales-report', [App\Http\Controllers\API\ReportController::class, 'productWiseSales']);
+    Route::get('date-wise-sales-report', [App\Http\Controllers\API\ReportController::class, 'dateWiseSales']);
+    Route::get('product-wise-stock-report', [App\Http\Controllers\API\ReportController::class, 'productWiseStock']);
 });  
-Route::get('product-wise-sales-report', [App\Http\Controllers\API\ReportController::class, 'productWiseSales']);
-Route::get('date-wise-sales-report', [App\Http\Controllers\API\ReportController::class, 'dateWiseSales']);
-Route::get('product-wise-stock-report', [App\Http\Controllers\API\ReportController::class, 'productWiseStock']);
+
 Route::post('login', [App\Http\Controllers\API\UserController::class, 'login']);
 
 
