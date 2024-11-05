@@ -1,8 +1,16 @@
+Prerequisites
+
+Before setting up the project, ensure you have the following installed on your machine:
+
+    PHP >= 8.0 (for Laravel back-end)
+    Composer (for managing PHP dependencies)
+    Node.js (for managing JavaScript dependencies)
+    npm or yarn (for Vue.js front-end package management)
+    MySQL (for database)
+    
 Backend install instruction 
-
-php version 8.0+
-
-composer install  
+ 
+  composer install  
 
 php artisan migrate
 
