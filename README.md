@@ -10,7 +10,7 @@ Before setting up the project, ensure you have the following installed on your m
     
 Backend install instruction 
  
-  composer install  
+composer install  
 
 php artisan migrate
 
@@ -31,7 +31,7 @@ npm run serve
 
 Browse 
 
-127.0.0.1:8080
+http://localhost:8080
 
 Login info
 username : superadmin@gmail.com
